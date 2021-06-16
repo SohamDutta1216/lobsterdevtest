@@ -1,0 +1,67 @@
+
+main {
+	padding: calc(var(--heading-height) + 1.5vw) 4em 0;
+}
+
+p {
+	font-size: calc(2em + .25vw);
+	font-weight: 400;
+	line-height: 2;
+	margin-bottom: 1.5em;
+	color: #fcfcfc;
+}
+
+
+.container {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+}
+
+.btn {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #ffffff;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: #500b0b;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
