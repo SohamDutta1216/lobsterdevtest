@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Lobster Marketing Dev Test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://soham-friends-list.netlify.app/
 
-## Available Scripts
+## Goal
 
-In the project directory, you can run:
+build a react application that displays a list of 10 users from the following API on the home screen:
+https://randomuser.me/  
 
-### `npm start`
+### Acceptance Criteria
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* Application should have a Header, Body and Footer
+* The header should display the application name
+* In the Body, we would need to see the list of all the users. Specifically, we’re looking for their image, first, and last name
+* Each card should display users full information using an event
+* The Footer needs to contain your name, and a link to your LinkedIn profile
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Guidelines
 
-### `npm test`
+I would like you to display an understanding of good web design practice as well as demonstrating a solid understanding of React application development, knowledge of the difference between Functional and Class based components as well as their use cases. There is not a set design to follow, but please style the application in a way to give a sense of your artistic proclivity to CSS. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Main Features Complete
 
-### `npm run build`
+* [x] Search results should come from randomusers API (free API key: https://randomuser.me/).
+* [x] Application should have a Header, Body and Footer
+* [x] The header should display the application name
+* [x] In the Body, we would need to see the list of all the users. Specifically, we’re looking for their image, first, and last name
+* [x] Each card should display users full information using an event, in my case; On hover
+* [x] The Footer needs to contain your name, and a link to your LinkedIn profile
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Extras Complete
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* [x] All styling and components built using pure css (No component libraries or dependancies)
+* [x] CSS animations and transitions
+* [x] Dynamic query results
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Notes / Things I would add given more time
+* Attempted to create a modal component from scratch using pure CSS and JS but scrapped it due to 24 hour time limit so I could meet basic criteria
+* I would add eager loading to the API call
+* Create a button that stores the selected users information in local storage so users can save their favorite users for later
 
-### `npm run eject`
+### Running
+* git clone
+* cd into the project directory
+* ```npm install```
+* ```npm start```
+* Go to http://localhost:3000/
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
