@@ -1,6 +1,6 @@
 import React from 'react'
 import './cards.css'
-import Card from '../card/card'
+import Card from '../card'
 
 const cards = ({ users }) => {
   const allUsers = users.results

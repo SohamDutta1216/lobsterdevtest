@@ -1,9 +1,9 @@
 import React from 'react'
 import './header.css'
 
-const header = ({ setRefresh, refresh }) => {
+const header = ({ setRefresh }) => {
   const toggle = () => {
-    setRefresh(refresh => !refresh)
+    setRefresh(prev => !prev)
   }
   return (
     <div>

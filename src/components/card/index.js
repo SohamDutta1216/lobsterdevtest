@@ -2,7 +2,6 @@ import React from 'react'
 import './card.css'
 
 export default function card({ user }) {
-  console.log(user)
   return (
     < div >
       <div class="container">

@@ -1,5 +1,5 @@
 import React from 'react'
-import Cards from '../cards/cards'
+import Cards from '../cards'
 
 const body = ({ users }) => {
   return (

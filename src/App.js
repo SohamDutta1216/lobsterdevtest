@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import Header from './components/header/header'
-import Body from './components/body/body'
-import Footer from './components/footer/footer'
+import Header from './components/header'
+import Body from './components/body'
+import Footer from './components/footer'
 
 function App() {
   const [users, setUsers] = useState([])
@@ -13,7 +13,7 @@ function App() {
       .then(res => {
         setTimeout(() => {
           setUsers(res.data)
-        }, 300)
+        }, 500)
       }).catch(error => console.log(error))
   }, [refresh, query])
   const set10 = () => {
@@ -27,7 +27,7 @@ function App() {
   }
   return (
     <div>
-      <Header setRefresh={setRefresh} refresh={refresh} />
+      <Header setRefresh={setRefresh} />
       <div style={{ textAlign: 'center' }}>
         <button style={{ margin: '10px' }} onClick={set10}>10 per page</button>
         <button style={{ margin: '10px' }} onClick={set20}>20 per page</button>
