@@ -6,13 +6,14 @@ import { CgClose } from 'react-icons/cg'
 const card = ({ user, setShowModal, showModal }) => {
   function triggerModal() {
     setShowModal(prev => !prev)
+    console.log(user)
   }
   return (
     <div>
       <div class="container">
         <div class="profile-card">
           <div class="front">
-            <img src={user.picture.large} alt="" />
+            <img src={user.picture.large} alt="profilepicture" />
           </div>
           <div class="back">
             <h2>{user.name.first} {user.name.last}</h2>
@@ -20,18 +21,7 @@ const card = ({ user, setShowModal, showModal }) => {
           </div>
         </div>
       </div>
-      <Modal
-        isOpen={showModal}
-        onRequestClose={triggerModal}
-        className="mymodal"
-        overlayClassName="myoverlay"
-        closeTimeoutMS={500}
-        shouldCloseOnEsc={
-          true}
-      >
-        <CgClose style={{ height: '20%', width: '30px' }} className='float-right' onClick={triggerModal} />
 
-      </Modal>
     </div>
   )
 }

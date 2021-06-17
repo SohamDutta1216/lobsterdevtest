@@ -3,7 +3,6 @@ import './cards.css'
 import Card from '../card/card'
 const cards = ({ users, setShowModal, showModal }) => {
   const allUsers = users.results
-  console.log(allUsers)
   return (
     <div>
       <br />
