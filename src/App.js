@@ -16,15 +16,12 @@ function App() {
         }, 300)
       }).catch(error => console.log(error))
   }, [refresh, query])
-
   const set10 = () => {
     setQuery(10)
   }
-
   const set20 = () => {
     setQuery(20)
   }
-
   const set30 = () => {
     setQuery(30)
   }

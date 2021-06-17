@@ -10,14 +10,14 @@ export default function card({ user }) {
         <div class="profile-card">
           <div class="front">
             <img src={user.picture.large} alt="profilepicture" />
-            <h2 style={{ color: 'black' }}>{user.name.first} {user.name.last}</h2>
+            <h3 style={{ color: 'black' }}>{user.name.first} {user.name.last}</h3>
           </div>
           <div class="back">
-            <img src={user.picture.thumbnail} alt="profilepicture" style={{ marginTop: '10px' }} />
-            <h5 style={{ marginTop: '10px' }}>Location : {user.location.country}, {user.location.city}</h5>
-            <h5>Age : {user.dob.age}</h5>
-            <h5>Email : {user.email}</h5>
-            <h5>Number : {user.phone}</h5>
+            <img src={user.picture.thumbnail} alt="profilepicture" style={{ marginTop: '5px' }} />
+            <h6 class='info' style={{ marginTop: '10px' }}>Location : {user.location.country}, {user.location.city}</h6>
+            <h6 class='info'>Age : {user.dob.age}</h6>
+            <a href={'mailto:' + user.email}><h6 class='info'>Email : {user.email}</h6></a>
+            <a href={'tel:' + user.phone}><h6 class='info'>Number : {user.phone}</h6></a>
           </div>
         </div>
       </div>
