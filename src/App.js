@@ -6,7 +6,7 @@ import Footer from './components/footer/footer'
 
 function App() {
   const [users, setUsers] = useState([])
-
+  const [refresh, setRefresh] = useState(false)
   useEffect(() => {
     axios.get('https://randomuser.me/api/?results=10')
       .then(res => {
@@ -14,10 +14,10 @@ function App() {
           setUsers(res.data)
         }, 300)
       }).catch(error => console.log(error))
-  }, [])
+  }, [refresh])
   return (
     <div>
-      <Header />
+      <Header setRefresh={setRefresh} refresh={refresh} />
       <Body users={users} />
       <Footer />
     </div>
