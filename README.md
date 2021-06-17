@@ -33,6 +33,7 @@ I would like you to display an understanding of good web design practice as well
 * [x] All styling and components built using pure css (No component libraries or dependancies)
 * [x] CSS animations and transitions
 * [x] Dynamic query results
+* [x] Users contact links lead straight to email and text
 
 ### Notes / Things I would add given more time
 * Attempted to create a modal component from scratch using pure CSS and JS but scrapped it due to 24 hour time limit so I could meet basic criteria
