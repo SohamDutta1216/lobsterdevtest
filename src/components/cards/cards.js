@@ -1,7 +1,7 @@
 import React from 'react'
 import './cards.css'
 import Card from '../card/card'
-const cards = ({ users }) => {
+const cards = ({ users, setShowModal, showModal }) => {
   const allUsers = users.results
   console.log(allUsers)
   return (
@@ -10,7 +10,7 @@ const cards = ({ users }) => {
       <div class="cards">
         {allUsers && allUsers.map((user) => (
           <div className='card'>
-            <Card user={user} />
+            <Card user={user} showModal={showModal} setShowModal={setShowModal} />
           </div>
         ))}
       </div>

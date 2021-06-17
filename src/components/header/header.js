@@ -9,7 +9,7 @@ const header = ({ setRefresh, refresh }) => {
     <div>
       <header>
         <div class="overlay">
-          <h1><img src='/logo.png' /></h1>
+          <h1><img src='/logo.png' alt='logo' /></h1>
           <button onClick={toggle}>New Friends</button>
         </div>
       </header>

@@ -1,21 +1,38 @@
 import React from 'react'
 import './card.css'
 import { CgProfile } from 'react-icons/cg'
-const card = ({ user }) => {
+import Modal from "react-modal";
+import { CgClose } from 'react-icons/cg'
+const card = ({ user, setShowModal, showModal }) => {
+  function triggerModal() {
+    setShowModal(prev => !prev)
+  }
   return (
-    <div class="container">
-      <div class="profile-card">
-        <div class="front">
-          <img src={user.picture.large} alt="" />
-        </div>
-        <div class="back">
-          <h2>{user.name.first} {user.name.last}</h2>
-          <button className='btn'><CgProfile /></button>
-
+    <div>
+      <div class="container">
+        <div class="profile-card">
+          <div class="front">
+            <img src={user.picture.large} alt="" />
+          </div>
+          <div class="back">
+            <h2>{user.name.first} {user.name.last}</h2>
+            <button className='btn' onClick={triggerModal}><CgProfile /></button>
+          </div>
         </div>
       </div>
-    </div>
+      <Modal
+        isOpen={showModal}
+        onRequestClose={triggerModal}
+        className="mymodal"
+        overlayClassName="myoverlay"
+        closeTimeoutMS={500}
+        shouldCloseOnEsc={
+          true}
+      >
+        <CgClose style={{ height: '20%', width: '30px' }} className='float-right' onClick={triggerModal} />
 
+      </Modal>
+    </div>
   )
 }
 

@@ -7,6 +7,7 @@ import Footer from './components/footer/footer'
 function App() {
   const [users, setUsers] = useState([])
   const [refresh, setRefresh] = useState(false)
+  const [showModal, setShowModal] = useState(false);
   useEffect(() => {
     axios.get('https://randomuser.me/api/?results=10')
       .then(res => {
@@ -18,7 +19,7 @@ function App() {
   return (
     <div>
       <Header setRefresh={setRefresh} refresh={refresh} />
-      <Body users={users} />
+      <Body users={users} showModal={showModal} setShowModal={setShowModal} />
       <Footer />
     </div>
   );
