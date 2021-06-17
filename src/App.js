@@ -7,7 +7,6 @@ import Footer from './components/footer/footer'
 function App() {
   const [users, setUsers] = useState([])
   const [refresh, setRefresh] = useState(false)
-  const [showModal, setShowModal] = useState(false);
   const [query, setQuery] = useState(10)
   useEffect(() => {
     axios.get(`https://randomuser.me/api/?results=${query}`)
@@ -37,7 +36,7 @@ function App() {
         <button style={{ margin: '10px' }} onClick={set20}>20 per page</button>
         <button style={{ margin: '10px' }} onClick={set30}>30 per page</button>
       </div>
-      <Body users={users} showModal={showModal} setShowModal={setShowModal} />
+      <Body users={users} />
       <Footer />
     </div>
   );

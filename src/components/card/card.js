@@ -1,29 +1,28 @@
 import React from 'react'
 import './card.css'
 import { CgProfile } from 'react-icons/cg'
-import Modal from "react-modal";
-import { CgClose } from 'react-icons/cg'
-const card = ({ user, setShowModal, showModal }) => {
-  function triggerModal() {
-    setShowModal(prev => !prev)
-    console.log(user)
-  }
+
+export default function card({ user }) {
+  console.log(user)
   return (
-    <div>
+    < div >
       <div class="container">
         <div class="profile-card">
           <div class="front">
             <img src={user.picture.large} alt="profilepicture" />
+            <h2 style={{ color: 'black' }}>{user.name.first} {user.name.last}</h2>
           </div>
           <div class="back">
-            <h2>{user.name.first} {user.name.last}</h2>
-            <button className='btn' onClick={triggerModal}><CgProfile /></button>
+            <img src={user.picture.thumbnail} alt="profilepicture" style={{ marginTop: '10px' }} />
+            <h5 style={{ marginTop: '10px' }}>Location : {user.location.country}, {user.location.city}</h5>
+            <h5>Age : {user.dob.age}</h5>
+            <h5>Email : {user.email}</h5>
+            <h5>Number : {user.phone}</h5>
           </div>
         </div>
       </div>
-
-    </div>
+    </div >
   )
 }
 
-export default card
+

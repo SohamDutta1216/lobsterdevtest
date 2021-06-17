@@ -1,15 +1,18 @@
 import React from 'react'
 import './cards.css'
 import Card from '../card/card'
-const cards = ({ users, setShowModal, showModal }) => {
+import Modal from "react-modal";
+import { CgClose } from 'react-icons/cg';
+
+const cards = ({ users }) => {
   const allUsers = users.results
   return (
     <div>
       <br />
       <div class="cards">
         {allUsers && allUsers.map((user) => (
-          <div className='card'>
-            <Card user={user} showModal={showModal} setShowModal={setShowModal} />
+          <div className='card' key={user.id}>
+            <Card user={user} />
           </div>
         ))}
       </div>
