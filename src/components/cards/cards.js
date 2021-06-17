@@ -15,6 +15,7 @@ const cards = ({ users }) => {
         ))}
       </div>
     </div>
+
   )
 }
 

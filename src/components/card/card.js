@@ -1,7 +1,6 @@
-import userEvent from '@testing-library/user-event'
 import React from 'react'
 import './card.css'
-import { CgMoreO } from 'react-icons/cg'
+import { CgProfile } from 'react-icons/cg'
 const card = ({ user }) => {
   return (
     <div class="container">
@@ -11,7 +10,7 @@ const card = ({ user }) => {
         </div>
         <div class="back">
           <h2>{user.name.first} {user.name.last}</h2>
-          <button className='btn'><CgMoreO /></button>
+          <button className='btn'><CgProfile /></button>
 
         </div>
       </div>

@@ -28,7 +28,7 @@ img {
   height:100%;
   top:380px;
   left:0;
-  background:#252525;
+  background:#000000;
   color:rgb(0, 0, 0);
   border-top-left-radius:55px;
   border-top-right-radius:55px;
@@ -51,7 +51,7 @@ img {
   text-align:center;
   line-height:30px;
   color:rgb(0, 0, 0);
-  background:#333;
+  background:rgb(0, 0, 0);
   font-size:14px;
   border-radius:100%;
 }
@@ -70,6 +70,5 @@ img {
 
 .btn :hover {
   cursor:pointer;
-  transform: scale(1.1);
-  transition: all .2s ease-in-out;
+  transition: all .1s ease-in-out;
 }

@@ -7,6 +7,8 @@
   margin: 0 auto;
   display: grid;
   grid-gap:4rem;
+  margin-bottom:60px;
+  margin-top:60px;
 }
 
 @media (min-width: 900px) {
