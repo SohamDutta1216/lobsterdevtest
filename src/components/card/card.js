@@ -1,6 +1,5 @@
 import React from 'react'
 import './card.css'
-import { CgProfile } from 'react-icons/cg'
 
 export default function card({ user }) {
   console.log(user)

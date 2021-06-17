@@ -1,8 +1,6 @@
 import React from 'react'
 import './cards.css'
 import Card from '../card/card'
-import Modal from "react-modal";
-import { CgClose } from 'react-icons/cg';
 
 const cards = ({ users }) => {
   const allUsers = users.results
