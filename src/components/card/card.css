@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap');
+
+img {
+  border-radius: 100px;
+}
+
+.container{
+  width:200px;
+  margin:0px auto;
+  text-align:center;
+}
+
+.profile-card{
+  margin:0px auto;
+  width:200px;
+  height:200px;
+  overflow:hidden;
+  background:rgb(255, 255, 255);
+  padding:10px;
+  border-radius:10px;
+  box-shadow:0px 2px 6px rgb(0, 0, 0);
+  transition:0.7s;
+  position:relative;
+}
+.profile-card .back{
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:380px;
+  left:0;
+  background:#252525;
+  color:rgb(0, 0, 0);
+  border-top-left-radius:55px;
+  border-top-right-radius:55px;
+  padding:10px;
+  box-sizing:border-box;
+  transition:0.4s;
+}
+.back p{
+  padding:60px 0px;;
+  line-height:27px;
+}
+
+.icon li{
+  display: inline-block;
+}
+.icon li a{
+  display:block;
+  width:30px;
+  height:30px;
+  text-align:center;
+  line-height:30px;
+  color:rgb(0, 0, 0);
+  background:#333;
+  font-size:14px;
+  border-radius:100%;
+}
+.profile-card:hover  .back{
+  top:0px;
+  border-radius:10px;
+}
+
+
+.btn {
+  background-color:transparent;
+  border:transparent;
+  border-radius: 10px;
+  font-size:30px
+}
+
+.btn :hover {
+  cursor:pointer;
+  transform: scale(1.1);
+  transition: all .2s ease-in-out;
+}

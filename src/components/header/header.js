@@ -3,9 +3,15 @@ import './header.css'
 
 const header = () => {
   return (
-    <header>
-      <h1>Random Users Generator</h1>
-    </header>
+    <div>
+      <header>
+        <div class="overlay">
+          <h1>Friends List</h1>
+          <button>New Friends</button>
+        </div>
+      </header>
+      <br />
+    </div>
   )
 }
 

@@ -2,10 +2,18 @@ import React from 'react'
 import './cards.css'
 import Card from '../card/card'
 const cards = ({ users }) => {
-  console.log(users)
+  const allUsers = users.results
+  console.log(allUsers)
   return (
-    <div className='users-container'>
-
+    <div>
+      <br />
+      <div class="cards">
+        {allUsers && allUsers.map((user) => (
+          <div className='card'>
+            <Card user={user} />
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
